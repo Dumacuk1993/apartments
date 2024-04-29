@@ -1,0 +1,124 @@
+.modals__overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s;
+	cursor: pointer;
+}
+.modal {
+	width: 50wh;
+	display: none;
+	background-color: #fff;
+	border-radius: 8px;
+	cursor: default;
+    background-color: #fff;
+    position: relative;
+	padding: 8px 32px 32px;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.modal__close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+.modal__close i {
+    font-size: 24px;
+}
+.modal__button {
+	padding: 12px 32px;
+	background-color: #f84c21;
+	cursor: pointer;
+	transition: all .3s;
+	font-size: 18px;
+	border: none;
+	border-radius: 16px;
+	color: #fff;
+	font-weight: 600;
+}
+.modal__button:hover {
+	background-color: #f93d09;
+}
+.modal__content_title {
+	font-size: 22px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 16px;
+}
+.modal__content_description {
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 32px;
+}
+.modal__content_variants {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+.modal__content_variant {
+	border: 1px solid rgba(0, 87, 128, .3);
+	padding: 16px 4px;
+	border-radius: 16px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 16px;
+	cursor: pointer;
+}
+.modal__variant_title {
+	font-size: 14px;
+	font-weight: 500;
+}
+.modal__checkboxs {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 16px;
+	max-width: 550px;
+}
+.modal__checkboxs label {
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+.modal__checkbox {
+	margin-right: 8px;
+}
+.modal__form {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: center;
+}
+.modal__form input {
+	padding: 8px;
+	border-radius: 8px;
+	outline: none;
+	border: 1px solid rgba(0, 87, 128, .3);
+	width: 320px;
+}
+.form__footer {
+	font-size: 12px;
+}
+.form__footer a {
+	font-weight: 700;
+	text-decoration: none;
+}

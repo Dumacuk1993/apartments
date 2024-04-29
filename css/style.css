@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #005780;
+}
+li, ul {
+    list-style: none;
+}
+.container {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+
+/* HEADER */
+.header {
+    padding: 24px 0;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo img{
+    width: 180px;
+    height: auto;
+}
+.header__links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.header__icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.header__icons i {
+    font-size: 24px;
+}
+.header__phone a {
+    text-decoration: none;
+    color: #1f245a;
+    font-weight: 700;
+}
+.fa-brands.fa-whatsapp {
+}
+.fa-brands.fa-telegram {
+}
+
+
+/* MAIN */
+.main {
+    margin-top: 32px;
+}
+.main__title {
+    text-align: center;
+    font-size: 44px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.main__description {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+}
+.main_filters {
+    margin: 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    width: 250px;
+
+    border: 1px solid #e7e7e8;
+    border-radius: 40px;
+    padding: 4px 20px;
+}
+.main_filters__item {
+    padding: 4px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.main_filters__item:hover {
+    background-color: #fe6540;
+    opacity: .4;  
+    color: #fff;  
+}
+.main_filters__item.active {
+    background-color: #fe6540;
+    color: #fff;
+}
+.main__cards {
+}
+
+.main__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    padding: 16px;
+    border: 1px solid #e7e7e8;
+    border-radius: 32px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.20);
+    margin-bottom: 24px;
+}
+
+.main__card.hide {
+    display: none;
+}
+.card__left {
+    position: relative;
+    max-width: 240px;
+}
+.card__left-banner {
+    position: absolute;
+    top: 0px;
+    left: -32px;
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    background-color: #fe6540;
+    height: 32px;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 16px;
+}
+.card__left__title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 16px;
+}
+.card__left__img img{
+    width: 240px;
+    height: auto;
+}
+.card__left__description {
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.card__location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+.card__location i {
+    margin-right: 6px;
+}
+.card__delivery {
+    font-weight: 700;
+}
+.card__delivery span {
+    display: block;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.card__rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+.card__rating-title {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.card__advantages {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    width: 110px;
+}
+.card__price span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card__button {
+    width: 150px;
+    background-color: #fe6540;
+
+    font-weight: 600;
+    line-height: 1.6;
+    padding: 4px 8px;
+    border-radius: 8px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.card__button:hover {
+    background-color: #f84c21;
+}
+.card__button a {
+    
+}
+
+
+/* QWIZ */
+
+.quiz .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.quiz__img {
+    width: 50%;
+}
+.quiz__img img {
+    width: 100%;
+    height: auto;
+}
+.quiz__content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 50%;
+}
+.quiz__title {
+    font-size: 37px;
+    font-weight: 400;
+}
+.quiz__button {
+    text-decoration: none;
+    color: #fff;
+}
+
+.quiz__button:hover {
+    background-color: #f84c21;
+}
+.quiz__button i {
+    margin-left: 8px;
+}
+
