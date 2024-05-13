@@ -19,17 +19,7 @@
                 <img src="img/logo.png" alt="">
             </a>
             <div class="header__links">
-                <div class="header__icons">
-                    <a href="">
-                        <i class="fa-brands fa-whatsapp" style="color: #fe6540;"></i>
-                    </a>                    
-                    <a href="">
-                        <i class="fa-brands fa-telegram" style="color: #fe6540;"></i>
-                    </a>                    
-                </div>  
-                <div class="header__phone">
-                    <a href="tel:">+971 (4) 450-2640</a>
-                </div>
+                <a href="" class="header__links-btn">Get a consultation</a>
             </div>
         </div>
     </header>
@@ -42,21 +32,21 @@
                 <div data-filter="studio" class="main_filters__item">
                     Studio
                 </div> 
-                <div data-filter="1" class="main_filters__item">
+                <div data-filter="one" class="main_filters__item">
                     1
                 </div>
-                <div data-filter="2" class="main_filters__item">
+                <div data-filter="two" class="main_filters__item">
                     2
                 </div>
-                <div data-filter="3" class="main_filters__item">
+                <div data-filter="tree" class="main_filters__item">
                     3
                 </div>
-                <div data-filter="4" class="main_filters__item">
+                <div data-filter="more" class="main_filters__item">
                     4+
                 </div>       
             </div>
             <div class="main__cards">
-                <div class="main__card" data-filters="[ 2, 3, 4 ]">
+                <div class="main__card" data-filters="[ two, tree, more ]">
                     <div class="card__left">
                         <div class="card__left-banner">
                             The most buyable for investment
@@ -76,7 +66,6 @@
                         
                         <span><i class="fa-solid fa-location-dot" style="color: #fe6540;"></i>Downtown</span>
                         <div class="card__delivery">
-                            Delivery date
                             <span>Q1 2029</span>
                         </div>
                     </div>
@@ -88,6 +77,9 @@
                             <i class="fa-solid fa-star" style="color: #fe6540;"></i>
                             <i class="fa-solid fa-star" style="color: #fe6540;"></i>
                             <i class="fa-solid fa-star" style="color: #fe6540;"></i>
+                        </div> 
+                        <div class="card__rating-window">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, velit?   
                         </div>   
                     </div>
                     <ul class="card__advantages">
@@ -98,15 +90,23 @@
                     <div class="card__price">
                         <div class="card__price_title">price from</div>
                         <span>$1 490 000</span>
-                        <div class="card__rice_imgs">
-                            <img src="" alt="">
+                        <div class="card__price_title">30/70</div>
+                        <div class="card__price_imgs">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
                         </div>
                     </div>
-                    <a href="./the-sapphire.html" target="_blank" class="card__button">
-                        learn more
-                    </a>
+                    <div class="card__buttons">
+                        <a href="./the-sapphire.html" target="_blank" class="card__button">
+                            learn more
+                        </a>
+                        <div class="card__buttons-text">
+                            free consultation and no broker's commission
+                        </div>
+                    </div>
                 </div>
-                <div class="main__card" data-filters="[ studio, 1 ]">
+                <div class="main__card" data-filters="[ studio, one ]">
                     <div class="card__left">
                         <div class="card__left-banner">
                             Most Buyable for Living
@@ -125,7 +125,6 @@
                         
                         <span><i class="fa-solid fa-location-dot" style="color: #fe6540;"></i>Ras Al Khor</span>
                         <div class="card__delivery">
-                            Delivery date
                             <span>Q2 2027</span>
                         </div>
                     </div>
@@ -137,6 +136,9 @@
                             <i class="fa-solid fa-star" style="color: #fe6540;"></i>
                             <i class="fa-solid fa-star" style="color: #fe6540;"></i>
                             <i class="fa-solid fa-star-half-stroke" style="color: #fe6540;"></i>
+                        </div>
+                        <div class="card__rating-window">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, velit?   
                         </div>   
                     </div>
                     <ul class="card__advantages">
@@ -147,13 +149,22 @@
                     <div class="card__price">
                         <div class="card__price_title">price from</div>
                         <span>$330 000</span>
-                        <div class="card__rice_imgs">
-                            <img src="" alt="">
+                        <div class="card__price_title">30/70</div>
+                        <div class="card__price_imgs">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
                         </div>
                     </div>
-                    <a href="" target="_blank" class="card__button">
-                        learn more
-                    </a>
+                    <div class="card__buttons">
+                        <a href="" target="_blank" class="card__button">
+                            learn more
+                        </a>
+                        <div class="card__buttons-text">
+                            free consultation and no broker's commission
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -185,17 +196,17 @@
                         What construction status are you considering for yourself? 
                         There are several options to choose from</div>
                     <div class="modal__content_variants">
-                        <div class="modal__content_variant">
+                        <div class="modal__content_variant" data-value="under construction">
                             <img src="./img/quiz/quiz_1.1.svg" alt="">
                             <div class="modal__variant_title">Under construction</div>
                         </div>
-                        <div class="modal__content_variant">
+                        <div class="modal__content_variant" data-value="finished">
                             <img src="./img/quiz/quiz_1.2.svg" alt="">
                             <div class="modal__variant_title">Finished</div>
                         </div>   
                     </div>
                 </div>
-                <button class="modal__button modal__button--step2">Next Step</button>
+                <button disabled class="modal__button modal__button--step2">Next Step</button>
             </div>
             <div class="modal modal__step--2">
                 <div class="modal__top">
@@ -204,33 +215,16 @@
                 </div>
                 <div class="modal__content">
                     <div class="modal__content_title">What areas are you considering?</div>
-                    <div class="modal__content_description">
-                        Please indicate the cities and districts where you would like to find real estate
-                    </div>
                     <div class="modal__checkboxs">
-                        <label for="one">
-                            <input class="modal__checkbox" type="checkbox" name="one" id="">
-                            Peninsula Five
-                        </label>
-                        <label for="one">
-                            <input class="modal__checkbox" type="checkbox" name="one" id="">
-                            Myrtle
-                        </label>
-                        <label for="one">
-                            <input class="modal__checkbox" type="checkbox" name="one" id="">
-                            Arabian Ranches lll - May
-                        </label>
-                        <label for="one">
-                            <input class="modal__checkbox" type="checkbox" name="one" id="">
-                            Hills Park
-                        </label>
-                        <label for="one">
-                            <input class="modal__checkbox" type="checkbox" name="one" id="">
-                            Arabian Ranches lll - June
-                        </label>
+                        <img src="img/district_1.jpg" alt="" data-value="Dubai Marina">
+                        <img src="img/district_2.jpg" alt="" data-value="Business Bay">
+                        <img src="img/district_3.jpg" alt="" data-value="Palm Jumeirah">
+                    </div>
+                    <div class="modal__bottom-input">
+                        <input class="modal__checkbox" type="text" name="one" id="" placeholder="Other...">
                     </div>
                 </div>
-                <button class="modal__button modal__button--step3">Next Step</button>
+                <button disabled class="modal__button modal__button--step3">Next Step</button>
             </div>
             <div class="modal modal__step--3">
                 <div class="modal__top">
@@ -239,12 +233,9 @@
                 </div>
                 <div class="modal__content" style="width: 600px;">
                     <div class="modal__content_title">Choose your budget</div>
-                    <div class="modal__content_description">
-                        Please let us know the budget for your project.
-                    </div>
                     <input type="text" class="js-range-slider" name="my_range" value="" />
                 </div>
-                <button class="modal__button modal__button--step4">Next Step</button>
+                <button style="background-color: #fe6540;" class="modal__button modal__button--step4">Next Step</button>
             </div>
             <div class="modal modal__step--4">
                 <div class="modal__top">
@@ -257,25 +248,25 @@
                         Choose one option Purpose of purchase
                     </div>
                     <div class="modal__content_variants">
-                        <div class="modal__content_variant">
+                        <div class="modal__content_variant" data-value="investments">
                             <img src="./img/quiz/quiz_4.1.svg" alt="">
                             <div class="modal__variant_title">Investments</div>
                         </div>
-                        <div class="modal__content_variant">
+                        <div class="modal__content_variant" data-value="vacation">
                             <img src="./img/quiz/quiz_4.2.svg" alt="">
                             <div class="modal__variant_title">Vacation</div>
                         </div> 
-                        <div class="modal__content_variant">
+                        <div class="modal__content_variant" data-value="accommodation">
                             <img src="./img/quiz/quiz_4.3.svg" alt="">
                             <div class="modal__variant_title">Accommodation</div>
                         </div>
-                        <div class="modal__content_variant">
+                        <div class="modal__content_variant" data-value="other">
                             <img src="./img/quiz/quiz_4.4.svg" alt="">
                             <div class="modal__variant_title">Other</div>
                         </div>   
                     </div>
                 </div>
-                <button class="modal__button modal__button--step5">Next Step</button>
+                <button disabled class="modal__button modal__button--step5">Next Step</button>
             </div>
             <div class="modal modal__step--5">
                 <div class="modal__top">
@@ -288,25 +279,25 @@
                         There are several options to choose from
                     </div>
                     <div class="modal__content_variants">
-                        <div class="modal__content_variant">
+                        <div class="modal__content_variant" data-value="apartment">
                             <img src="./img/quiz/quiz_5.1.svg" alt="">
                             <div class="modal__variant_title">Apartment</div>
                         </div>
-                        <div class="modal__content_variant">
+                        <div class="modal__content_variant" data-value="villa">
                             <img src="./img/quiz/quiz_5.2.svg" alt="">
                             <div class="modal__variant_title">Villa</div>
                         </div> 
-                        <div class="modal__content_variant">
+                        <div class="modal__content_variant" data-value="penthouse">
                             <img src="./img/quiz/quiz_5.3.svg" alt="">
                             <div class="modal__variant_title">Penthouse</div>
                         </div>
-                        <div class="modal__content_variant">
+                        <div class="modal__content_variant" data-value="townhouse">
                             <img src="./img/quiz/quiz_5.4.svg" alt="">
                             <div class="modal__variant_title">Townhouse</div>
                         </div>   
                     </div>
                 </div>
-                <button class="modal__button modal__button--step6">Next Step</button>
+                <button disabled class="modal__button modal__button--step6">Next Step</button>
             </div>
             <div class="modal modal__step--6">
                 <div class="modal__top">
@@ -316,14 +307,14 @@
                 <div class="modal__content">
                     <div class="modal__content_title">Thanks for taking the time to complete this form.</div>
                     <div class="modal__content_description">
-                        Please enter your email below and we will be in contact within 24 hours.
+                        Please choose a convenient way to contact you
                     </div>
-                    <form type="submit" class="modal__form">
+                    <form class="modal__form">
                         <input type="email" name="email" id="">
                         <div class="form__footer">
                             By submitting, you are agreeing to our <a href="">Terms</a> and <a href="">Privacy Policy</a>
                         </div> 
-                        <button type="submit" class="modal__button modal__button--submit">
+                        <button disabled class="modal__button modal__button--submit">
                             Complete Submission
                         </button>  
                     </form>
@@ -331,6 +322,17 @@
                 
             </div>
         </div>
+    </div>
+
+
+    <div class="modal__confirm-overlay">
+        <div class="modal__confirm">
+            <div class="modal__confirm-message">The saved data will be deleted. Are you sure you want to log out?</div>
+            <div class="modal__confirm-btns">
+                <a href="" class="modal__confirm-btn modal__confirm-close">get out</a>
+                <a href="" class="modal__confirm-btn modal__confirm-next">Continue</a>
+            </div>    
+        </div>    
     </div>
 
 

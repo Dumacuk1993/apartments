@@ -1,4 +1,5 @@
-.modals__overlay {
+.modals__overlay,
+.modal__confirm-overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -15,7 +16,12 @@
 	transition: all .3s;
 	cursor: pointer;
 }
-.modal {
+.modal__confirm-overlay {
+	z-index: 100;
+	cursor: default;
+}
+.modal,
+.modal__confirm {
 	width: 50wh;
 	display: none;
 	background-color: #fff;
@@ -29,7 +35,49 @@
 	flex-direction: column;
 	gap: 32px;
 }
-
+.modal__confirm {
+	display: flex;
+	z-index: 101;
+	padding: 32px;
+}
+.modal__confirm-message {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 32px;
+	max-width: 400px;
+	color: #1f245a;
+}
+.modal__confirm-btns {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 16px;
+	width: 100%;
+}
+.modal__confirm-btn {
+	padding: 8px 16px;
+	background-color: #f84c21;
+	cursor: pointer;
+	transition: all .3s;
+	font-size: 14px;
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.modal__confirm-next:hover {
+	background-color: #f93d09;
+	opacity: 0.7;
+}
+.modal__confirm-close {
+	background-color: grey;
+}
+.modal__confirm-close:hover {
+	opacity: 0.7;
+}
 .modal__close {
     position: absolute;
     right: 8px;
@@ -41,7 +89,7 @@
 }
 .modal__button {
 	padding: 12px 32px;
-	background-color: #f84c21;
+	background-color: grey;
 	cursor: pointer;
 	transition: all .3s;
 	font-size: 18px;
@@ -50,9 +98,9 @@
 	color: #fff;
 	font-weight: 600;
 }
-.modal__button:hover {
+/* .modal__button:hover {
 	background-color: #f93d09;
-}
+} */
 .modal__content_title {
 	font-size: 22px;
 	font-weight: 700;
@@ -83,6 +131,9 @@
 	gap: 16px;
 	cursor: pointer;
 }
+.modal__content_variant.active {
+	border: 1px solid #f84c21;
+}
 .modal__variant_title {
 	font-size: 14px;
 	font-weight: 500;
@@ -90,14 +141,35 @@
 .modal__checkboxs {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
-	gap: 16px;
-	max-width: 550px;
-}
-.modal__checkboxs label {
-	display: flex;
 	align-items: center;
-	padding: 0 20px;
+	gap: 16px;
+	max-width: 650px;
+	margin-bottom: 32px;
+}
+.modal__checkboxs img {
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+	border-radius: 8px;
+}
+.modal__checkboxs img.active {
+	transform: scale(1.1);
+}
+.modal__bottom-input {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal__bottom-input input {
+	padding: 8px;
+	border-radius: 8px;
+	outline: none;
+	border: 1px solid rgba(0, 87, 128, .3);
+	width: 360px;
+}
+.modal__step--2 .modal__content_title {
+	margin-bottom: 32px;
 }
 .modal__checkbox {
 	margin-right: 8px;
