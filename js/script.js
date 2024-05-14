@@ -100,7 +100,7 @@ const quizBtn = document.querySelector(".quiz__button"),
 	modals = document.querySelectorAll(".modal"),
 	btns = document.querySelectorAll(".modal__button"),
 	btnSubmit = document.querySelector(".modal__button--submit"),
-	btnsClose = document.querySelectorAll(".fa-xmark"),
+	btnsClose = document.querySelectorAll(".modal__close .fa-xmark"),
 	confirmModal = document.querySelector(".modal__confirm-overlay"),
 	confirmClose = document.querySelector(".modal__confirm-close"),
 	confirmNext = document.querySelector(".modal__confirm-next");
@@ -148,7 +148,7 @@ btns.forEach(( btn, i ) => {
 // MODALS DATA
 
 const selectors_step1 = document.querySelectorAll(".modal__step--1 .modal__content_variant"),
-	selectors_step2 = document.querySelectorAll(".modal__checkboxs img"),
+	selectors_step2 = document.querySelectorAll(".modal__checkboxs-img"),
 	selectors_step4 = document.querySelectorAll(".modal__step--4 .modal__content_variant"),
 	selectors_step5 = document.querySelectorAll(".modal__step--5 .modal__content_variant"),
 	selectors_step6 = document.querySelector(".modal__form input"),
@@ -296,7 +296,7 @@ btnSubmit.addEventListener("click", e => {
 
 	console.log({
 		step1: result_step1,
-		district: result_step2  + ", " + step2_other,
+		district: step2_other ? result_step2  + ", " + step2_other : result_step2,
 		price: result_step3,
 		step4: result_step4,
 		step5: result_step5,
@@ -311,9 +311,24 @@ btnSubmit.addEventListener("click", e => {
 })
 
 
+const modalConsultation = document.querySelector('.modal__consultation-overlay'),
+	consultationClose = document.querySelector('.modal__consultation-close i')
 
+document.querySelector('.header__links').addEventListener("click", (e) => {
+	e.preventDefault()
 
+	modalConsultation.style = "opacity: 1; visibility: visible;"	
+}) 
 
+modalConsultation.addEventListener("click", e => {
+	if (e.target === modalConsultation) {
+		modalConsultation.style = "opacity: 0; visibility: hidden;"
+	}
+})
+
+consultationClose.addEventListener("click", () => {
+	modalConsultation.style = "opacity: 0; visibility: hidden;"
+})
 
 
 })

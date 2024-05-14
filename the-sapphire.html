@@ -8,9 +8,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fc9b53be73.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/simple-lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modals.css">
     <link rel="stylesheet" href="css/card.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Payment', 'Percent'],
+          ['During construction',     80],
+          ['Upon completion of construction',      20],
+        ]);
+
+        var options = {
+          colors: ['#fe6540', '#005780'] 
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -19,17 +47,7 @@
                 <img src="img/logo.png" alt="">
             </a>
             <div class="header__links">
-                <div class="header__icons">
-                    <a href="">
-                        <i class="fa-brands fa-whatsapp" style="color: #fe6540;"></i>
-                    </a>                    
-                    <a href="">
-                        <i class="fa-brands fa-telegram" style="color: #fe6540;"></i>
-                    </a>                    
-                </div>  
-                <div class="header__phone">
-                    <a href="tel:">+971 (4) 450-2640</a>
-                </div>
+                <a href="" class="header__links-btn">Get a consultation</a>
             </div>
         </div>
     </header>
@@ -139,7 +157,10 @@
                         The Sapphire features a rooftop observation deck offering stunning views of Dubai.
                     </div>
                 </div>
-                <img src="./img/1/map_1.png" alt="">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1805.3080129179277!2d55.24840003881916!3d25.182439921716973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69fd7cad0641%3A0xfd5fbd345b1cba08!2sTHE%20SAPPHIRE%20%E2%80%93%20Sheikh%20Zayed%20Road!5e0!3m2!1sen!2sru!4v1715607832889!5m2!1sen!2sru" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <img src="./img/1/map_1.png" alt=""> -->
             </div>
             <h2 class="locations__title">Locations nearby</h2>
             <div class="locations__wrapper">
@@ -205,107 +226,47 @@
         
     </section>
 
+    
+
     <section class="project">
         <div class="container">
             <h2 class="project__title">Layouts in the project Damac Properties</h2>
-            <div class="project_wrapper">
-                <div class="project__items">
-                    <div class="project__item" data-project="2b">
-                        <div class="project__item_title">2 Bedrooms</div>
-                        <div class="project__item_price">
-                            from 1 590 000 $
-                            <span>from 600 $/ft²</span>
-                        </div>
-                        <div class="project__item_info">from 2 696 ft²</div>
-                        <div class="project__item_varint">8 variants <i class="fa-solid fa-arrow-right" style="color: #fe6540;"></i></div>        
+            <div class="payment__description">From 2 bedrooms (from 2 696 ft²) to 4 bedrooms (from 9 372 ft²)</div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/1/project_1.webp" alt="">
                     </div>
-                    <div class="project__item " data-project="3b">
-                        <div class="project__item_title">3 Bedrooms</div>
-                        <div class="project__item_price">
-                            from 1 490 000 $
-                            <span>from 700 $/ft²</span>
-                        </div>
-                        <div class="project__item_info">from 2 073 ft²</div>
-                        <div class="project__item_varint">48 variants <i class="fa-solid fa-arrow-right" style="color: #fe6540;"></i></div>        
+                    <div class="swiper-slide">
+                        <img src="img/1/project_2.webp" alt="">
                     </div>
-                    <div class="project__item" data-project="4b">
-                        <div class="project__item_title">4+ Bedrooms</div>
-                        <div class="project__item_price">
-                            from 15 350 000 $
-                            <span>from 2000 $/ft²</span>
-                        </div>
-                        <div class="project__item_info">from 9 372 ft²</div>
-                        <div class="project__item_varint">2 variants <i class="fa-solid fa-arrow-right" style="color: #fe6540;"></i></div>        
+                    <div class="swiper-slide">
+                        <img src="img/1/project_3.webp" alt="">
                     </div>
                 </div>
-                <div class="project__views">
-                    <div class="project__view" data-layout="2b">
-                        <div class="project__view_title">In The Sapphire you can choose layout with 2 bedrooms from 8 variants</div>
-                        <div class="project__view_img">
-                            <img src="img/1/project_1.webp" alt="">
-                        </div>    
-                    </div>
-                    <div class="project__view hide" data-layout="3b">
-                        <div class="project__view_title">In The Sapphire you can choose layout with 2 bedrooms from 8 variants</div>
-                        <div class="project__view_img">
-                            <img src="img/1/project_2.webp" alt="">
-                        </div>    
-                    </div>
-                    <div class="project__view hide" data-layout="4b">
-                        <div class="project__view_title">In The Sapphire you can choose layout with 2 bedrooms from 8 variants</div>
-                        <div class="project__view_img">
-                            <img src="img/1/project_3.webp" alt="">
-                        </div>    
-                    </div>
-                </div> 
-            </div>      
+            </div>
+            
         </div>
     </section>
 
     <section class="payment">
         <div class="container">
-            <div class="payment__wrapper">
+                
                 <h2 class="payment__title">Payment plan</h2>
                 <div class="payment__description">We calculated the most convenient possible payment option for The Sapphire project</div>
-                <div class="payment__price">Price from $1 494 900</div>
-                <div class="payment__items">
-                    <div class="payment__item payment__item--dark">
-                        <div class="payment__item--title">On booking</div>
-                        <div class="payment__item--percent">20 %</div>    
-                        <div class="payment__item--price">$298 980</div>
-                        <div></div>
-                    </div>
-                    <div class="payment__item">
-                        <div class="payment__item--title">During construction</div>
-                        <div class="payment__item--percent">50 %</div>    
-                        <div class="payment__item--price">$747 450</div>
-                        <div></div>
-                    </div>
-                    <div class="payment__item payment__item--dark">
-                        <div class="payment__item--title">Upon completion of construction</div>
-                        <div class="payment__item--percent">30 %</div>    
-                        <div class="payment__item--price">$448 470</div>
-                        <div></div>
-                    </div>
+                <div class="payment__circle">
+                    <div id="piechart" style="width: 900px; height: 600px;"></div>
                 </div>
-            </div>
+                
         </div>
     </section>
 
     <section class="analytic">
         <div class="container">
             <h2 class="analytic__title">Analytic</h2>
-            <div class="analytic__wrapper">
-                <div class="analytic__item">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, maxime.
-                </div>
-                <div class="analytic__item">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, maxime.
-                </div>
-                <div class="analytic__item">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, maxime.
-                </div>
-            </div>    
+            <!-- <div class="analytic__wrapper">
+               
+            </div>     -->
         </div>
     </section>
 
@@ -322,10 +283,21 @@
         </div>
     </section>
 
-    
+    <div class="modal__consultation-overlay">
+        <div class="modal__consultation">
+            <div class="modal__consultation-close"><i class="fa-solid fa-xmark" style="color: #005780;"></i></div>
+            <div class="modal__consultation-message">Fill in the form and we will contact you</div>
+            <form type="submit" class="modal__consultation--form">
+                <input type="text" placeholder="Name">
+                <input type="phone" placeholder="Phone">
+                <button type="submit">send</button>    
+            </form> 
+        </div>
+    </div>
     
 
     <script src="js/simple-lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/card.js"></script>
 </body>
 </html>
