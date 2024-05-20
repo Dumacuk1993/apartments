@@ -1,0 +1,305 @@
+@media (max-width: 1150px) {
+    .card__mobile-wrapper {
+        gap: 16px;
+    }
+}
+@media (max-width: 1100px) {
+    .card__mobile-wrapper {
+        flex-direction: column;
+    }
+    .card__left-banner {
+        font-size: 14px;
+        min-width: 272px;
+    }
+    .main__card-wrapper {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 1024px) {
+    .locations__map-descr {
+        font-size: 16px;
+    }
+    .locations__map-title {
+        font-size: 26px;
+    }
+    .locations__map {
+        gap: 16px;
+    }
+}
+@media (max-width: 985px) {
+    .main__card-wrapper {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .card__left__description {
+        display: none;
+    }
+    .card__left__description--mobile {
+        display: block;
+    }
+    .card__buttons,
+    .card__price {
+        width: 45%;
+    }
+    .card__buttons {
+        align-items: center;
+    }
+    .card__price {
+        flex-direction: row;
+    }
+    .card__price-wrapper {
+        width: 50%;
+    }
+    .card__left__title {
+        text-align: center;
+    }
+    .card__left {
+        max-width: 320px;
+    }
+    .card__left__img img {
+        width: 100%;
+    }
+    .card__info {
+        gap: 6px;
+    }
+    .card__info_form__title {
+        margin: 7px 0;
+    }
+    .card__rating-window {
+        width: 400px;
+        top: -400%;
+    }
+    .card__rating:hover .card__rating-window {
+        top: -330%;
+    }
+}
+@media (max-width: 900px) {
+    .quiz__title {
+        font-size: 24px;
+    }
+    .swiper {
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .card__buttons {
+        width: 100%;
+    }   
+    .card__price {
+        width: 45%;
+    }
+    .card__advantages {
+        width: 45%;
+    }
+    .card__mobile-wrapper {
+        flex-direction: row;
+        width: 40%;
+        justify-content: center;
+        gap: 38px;
+    }
+    /* .card__rating-window {
+        width: 220px;
+        font-size: 14px;
+        padding: 8px;
+        left: -140%;
+    } */
+    .card__rating-window {
+        left: -290px;
+    }
+}
+@media (max-width: 768px) {
+    .card__gallery {
+        width: 100%;
+    }
+    .card__top {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .card__info {
+        align-items: center;
+    }
+    .card__info_title,
+    .card__info_rating {
+        display: none;
+    }
+    .card__info_rating--mobile {
+        display: flex;
+        justify-content: center;
+    }
+    .card__info_title--mobile {
+        display: inline;
+        text-align: center;
+    }
+    .locations__map {
+        flex-direction: column;
+    }
+    iframe {
+        width: 100% !important;
+        height: 300px !important;
+    }
+    .locations__map-content {
+        width: 100%;
+    }
+    .brochure__img {
+        height: 290px;
+    }
+}
+@media (max-width: 720px) {
+    .modal__checkboxs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4px;
+        max-width: 320px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+    .modal__checkboxs img,
+    .modal__checkboxs-img {
+        width: 100px;
+        height: 100px;
+    }
+    .modal__checkboxs-img div {
+        top: 20%;
+    }
+    .modal__content {
+        width: 450px !important;
+    }
+    .modal__step--4 .modal__content_variants,
+    .modal__step--5 .modal__content_variants {
+        flex-direction: column;
+    }
+}
+@media (max-width: 660px) {
+    .card__left {
+        max-width: 100%;
+    }
+    .card__price {
+        width: 100%;
+    }
+    .card__price-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .card__mobile-wrapper {
+        width: 50%;
+    }
+    .card__left__img img {
+        border-radius: 32px;
+    }
+    .brochure__imgs {
+        display: flex;
+        flex-direction: column;
+    }
+    .card__rating-window {
+        left: -135px;
+    }
+}
+@media (max-width: 560px) {
+    .main__card-wrapper {
+        flex-direction: column;
+    }
+    .card__advantages {
+        width: 100%;
+        align-items: center;
+    }
+    .card__mobile-wrapper {
+        width: 100%;
+    }
+    .modal__content {
+        width: 320px !important;
+    }
+    .card__rating-window {
+        left: -215px;
+    }
+}
+@media (max-width: 500px) {
+    .main__title {
+        font-size: 36px;
+    }
+    .main__description {
+        font-size: 20px;
+    }
+    .main_filters {
+        margin: 32px auto;
+    }
+    .quiz__title {
+        text-align: center;
+    }
+    .quiz__img {
+        display: none;
+    }
+    .quiz__content {
+        gap: 16px;
+        width: 100%;
+        align-items: center;
+    }
+    .modal__content_variant {
+        padding: 12px 4px;
+        width: 90px;
+        gap: 8px;
+        height: 90px;
+    }
+    .modal__variant_title {
+        text-align: center;
+        font-size: 12px;
+    }
+    .modal, .modal__confirm, .modal__consultation {
+        padding: 8px 16px 16px;
+    }
+    .card__gallery {
+        height: 220px;
+    }
+    .card__rating-window {
+        width: 265px;
+        font-size: 12px;
+        left: -160px;
+    }
+    .card__rating:hover .card__rating-window {
+        top: -295%;
+    }
+}
+@media (max-width: 425px) {
+    .header .container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .main__card {
+        padding: 8px;
+    }
+    .header {
+        padding: 0;
+    }
+    .modal__content_title {
+        font-size: 18px;
+    }
+    .modal__content_description {
+        font-size: 12px;
+    }
+    .modal__bottom-input input {
+        width: 100%;
+    }
+    .modal__checkbox {
+        margin: 0;
+    }
+    .modal__checkboxs-img div {
+        font-size: 14px;
+    }
+    .modal__checkboxs-img.active {
+        transform: scale(1.05);
+    }
+}
+@media (max-width: 375px) {
+    .modal__checkboxs img, 
+    .modal__checkboxs-img {
+        width: 90px;
+        height: 90px;
+    }
+    .modal__content {
+        width: 280px !important;
+    }
+}

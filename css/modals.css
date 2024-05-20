@@ -16,6 +16,7 @@
 	visibility: hidden;
 	transition: all .3s;
 	cursor: pointer;
+	z-index: 3;
 }
 .modal__confirm-overlay {
 	z-index: 100;
@@ -36,6 +37,10 @@
 	align-items: center;
 	flex-direction: column;
 	gap: 32px;
+	margin: 0 8px;
+}
+.modal__step--6 {
+	display: flex;
 }
 .modal__confirm,
 .modal__consultation {
@@ -80,6 +85,12 @@
 }
 .modal__confirm-close:hover {
 	opacity: 0.7;
+}
+.modal__content_variants-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
 }
 .modal__close,
 .modal__consultation-close {
@@ -223,4 +234,13 @@
 .form__footer a {
 	font-weight: 700;
 	text-decoration: none;
+}
+
+.modal__step--6 .modal__consultation-message {
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.modal__step--6 input {
+	width: 100%;
 }

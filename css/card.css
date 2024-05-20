@@ -22,18 +22,7 @@
     background-size: cover;
     border-radius: 8px;
 }
-.card__gallery-item_fst--1 {
-    grid-area: fst;
-    background-image: url("../img/1/card_1.webp");
-}
-.card__gallery-item_lst--1 {
-    grid-area: lst;
-    background-image: url("../img/1/card_1.1.webp");
-}
-.card__gallery-item_two--1 {
-    grid-area: two;
-    background-image: url("../img/1/card_1.2.webp");
-}
+
 .card__gallery_btn {
     position: absolute;
     bottom: 0;
@@ -89,6 +78,7 @@
     padding: 8px 16px;
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 .card__info_form button,
 .modal__consultation--form button {
@@ -339,8 +329,15 @@
 }
 .payment__circle {
     width: 100%;
-    
 }
 #piechart {
     margin: 0 auto;
+}
+.card__info_title--mobile,
+.card__info_rating--mobile {
+    display: none;
+}
+.swiper-slide img {
+    width: 100%;
+    height: auto;
 }

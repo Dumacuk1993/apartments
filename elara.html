@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elara - TOP REAL ESTATE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc9b53be73.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/simple-lightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/card.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Payment', 'Percent'],
+          ['During construction',     70],
+          ['Upon completion of construction',      30],
+        ]);
+
+        var screenWidth = window.innerWidth;
+  
+  // Определяем, какие размеры установить в зависимости от ширины экрана
+        var chartAreaWidth, chartAreaHeight;
+        if (screenWidth < 630) { // Например, если ширина экрана меньше 600 пикселей
+            chartAreaWidth = screenWidth - 32;
+            chartAreaHeight = 300;
+        } else {
+            chartAreaWidth = '100%';
+            chartAreaHeight = 600;
+        }
+
+        console.log(screenWidth);
+
+        var options = {
+            width: chartAreaWidth,
+            height: chartAreaHeight,
+            legend: {
+                position: 'center', // Позиция легенды
+                alignment: 'center' // Выравнивание легенды
+            },
+            chartArea: {
+                width: chartAreaWidth,
+                height: chartAreaHeight - 100
+            },
+            colors: ['#fe6540', '#005780'] 
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/intlTelInput.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="header__logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <div class="header__links">
+                <a href="" class="header__links-btn">Get a consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="card">
+        <div class="container">
+            <div class="card__top">
+                <h1 class="card__info_title card__info_title--mobile">Elara</h1>
+                <div class="card__info_rating card__info_rating--mobile">
+                    <div class="card__rating-stars">
+                        <span class="card__info_rating-title">8.1</span>
+                        <i class="fa-solid fa-star" style="color: #fe6540;"></i>
+                        <i class="fa-solid fa-star" style="color: #fe6540;"></i>
+                        <i class="fa-solid fa-star" style="color: #fe6540;"></i>
+                        <i class="fa-solid fa-star" style="color: #fe6540;"></i>
+                        <i class="fa-solid fa-star-half-stroke" style="color: #fe6540;"></i>
+                    </div> 
+                </div>
+                <div class="card__gallery">
+                    <div class="card__gallery-item card__gallery-item_fst--1"></div>
+                    <div class="card__gallery-item card__gallery-item_lst--1"></div>
+                    <div class="card__gallery-item card__gallery-item_two--1"></div>    
+                    <style>
+                        .card__gallery-item_fst--1 {
+                            grid-area: fst;
+                            background-image: url("../img/elara/card_1.png");
+                        }
+                        .card__gallery-item_lst--1 {
+                            grid-area: lst;
+                            background-image: url("../img/elara/card_2.jpg");
+                        }
+                        .card__gallery-item_two--1 {
+                            grid-area: two;
+                            background-image: url("../img/elara/card_3.png");
+                        }
+                    </style>
+                    <div class="card__gallery_btn" >
+                        show all
+                    </div>
+                </div>
+                <div class="card__info">
+                    <h1 class="card__info_title">Elara</h1>
+                    <div class="card__info_rating">
+                        <div class="card__rating-stars">
+                            <span class="card__info_rating-title">8.1</span>
+                            <i class="fa-solid fa-star" style="color: #fe6540;"></i>
+                            <i class="fa-solid fa-star" style="color: #fe6540;"></i>
+                            <i class="fa-solid fa-star" style="color: #fe6540;"></i>
+                            <i class="fa-solid fa-star" style="color: #fe6540;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #fe6540;"></i>
+                        </div> 
+                    </div>
+                    <div class="card__info_price">
+                        price per m2 from:
+                        <span>$10 000</span>
+                    </div>
+                    <div class="card__info_price">
+                        region:
+                        <span>Madinat Jumeirah Living</span>
+                    </div>
+                    <div class="card__info_price">
+                        developer:
+                        <span>Meraas</span>
+                    </div>
+                    <div class="card__info_form__title">Fill in the form and we will contact you</div>
+                    <form action="" type="submit" class="card__info_form">
+                        <input type="text" placeholder="Name">
+                        <input type="hidden" class="phonecc" name="phonecc" value="">
+                        <input type="phone" class="phone">
+                        <button type="submit">send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="gallery" style="display: none;"> 
+
+        <a href="./img/elara/card_1.png" class="big" rel="rel1">
+          <img src="./img/elara/card_1.png" alt="">
+        </a>
+      
+        <a href="./img/elara/card_2.jpg" class="big" rel="rel1">
+          <img src="./img/elara/card_2.jpg" alt="">
+        </a>
+
+        <a href="./img/elara/card_3.png" class="big" rel="rel1">
+            <img src="./img/elara/card_3.png" alt="">
+        </a>
+    
+        <a href="./img/elara/card_4.png" class="big" rel="rel1">
+            <img src="./img/elara/card_4.png" alt="">
+        </a>
+
+        <a href="./img/elara/card_5.png" class="big" rel="rel1">
+            <img src="./img/elara/card_5.png" alt="">
+        </a>
+
+
+        
+    </div>
+
+    <section class="locations">
+        <div class="container">
+            <div class="locations__map">
+                <div class="locations__map-content">
+                    <div class="locations__map-title">
+                        Luxury Living in the Heart of Madinat Jumeirah Living Community
+                    </div>
+                    <div class="locations__map-descr">
+                        Discover a new elegant addition to the Madinat Jumeirah Living community with Elara. Offering luxury 1 to 4-bedroom apartments starting from AED 2.3M, Elara provides modern architecture, stunning views of the Burj Al Arab, and a truly enriching lifestyle. Meraas, the developer, is known for creating innovative residential spaces like City Walk Residences and Bluewaters Residences. Elara, part of the Urban Edition, promises a contemporary design philosophy while maintaining the neighborhood's character. Enjoy leisure activities minutes away from Souk Madinat Jumeirah and Jumeirah Beach. With a welcoming lobby, modern interiors, and breathtaking views, Elara offers a comfortable and luxurious living experience. The community features play areas, fitness centers, swimming pools, and more. Conveniently located near major landmarks and amenities, Madinat Jumeirah Living is the ideal place to live an extraordinary lifestyle.
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57790.2384858476!2d55.183748!3d25.1394127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b014c5b9e09%3A0x42dc4fc9c52b25f2!2sElara%2C%20Madinat%20Jumeirah%20Living!5e0!3m2!1sen!2sru!4v1716198569619!5m2!1sen!2sru" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            <h2 class="locations__title">Locations nearby</h2>
+            <div class="locations__wrapper">
+                <div class="min">
+                    <img src="img/locations/burj-khalifa.jpg" alt="">
+                    <div class="locations__content">
+                        <div class="locations__content-title">Burj Khalifa</div>   
+                        <div class="locations__content-time"><i class="fa-solid fa-car" style="color: #005780;"></i> 16 minutes</div>
+                    </div>
+                </div>
+                <div class="min">
+                    <img src="img/locations/museum_future.jpg" alt="">
+                    <div class="locations__content">
+                        <div class="locations__content-title">Museum of the Future</div>   
+                        <div class="locations__content-time"><i class="fa-solid fa-car" style="color: #005780;"></i> 13 minutes</div>
+                    </div>
+                </div>
+                <div class="min">
+                    <img src="img/locations/ras_al_hore.jpg" alt="">
+                    <div class="locations__content">
+                        <div class="locations__content-title">Ras Al Khor Wildlife Sunctuary</div>   
+                        <div class="locations__content-time"><i class="fa-solid fa-car" style="color: #005780;"></i> 24 minutes</div>
+                    </div>
+                </div> 
+                <div class="max">
+                    <img src="img/locations/dubai_frame.webp" alt="">
+                    <div class="locations__content">
+                        <div class="locations__content-title">The Dubai Frame</div>   
+                        <div class="locations__content-time"><i class="fa-solid fa-car" style="color: #005780;"></i> 17 minutes</div>
+                    </div>
+                </div>
+                <div class="min">
+                    <img src="img/locations/dubai_eye.png" alt="">
+                    <div class="locations__content">
+                        <div class="locations__content-title">Dubai Eye</div>   
+                        <div class="locations__content-time"><i class="fa-solid fa-car" style="color: #005780;"></i> 14 minutes</div>
+                    </div>
+                </div>
+                <div class="max">
+                    <img src="img/locations/miracle_garden.jpg" alt="">
+                    <div class="locations__content">
+                        <div class="locations__content-title">Dubai Miracle Garden</div>   
+                        <div class="locations__content-time"><i class="fa-solid fa-car" style="color: #005780;"></i> 13 minutes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="project">
+        <div class="container">
+            <h2 class="project__title">Layouts in the project Damac Properties</h2>
+            <div class="payment__description">From 1 bedrooms (from 732 ft² / 68 m²) to 3 bedrooms (from 1 938 ft² / 180 m²)</div>
+            <div style="width: 100%;">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/elara/projects/project_1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/elara/projects/project_2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/elara/projects/project_3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/elara/projects/project_4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/elara/projects/project_5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/elara/projects/project_6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <section class="payment">
+        <div class="container">
+                
+                <h2 class="payment__title">Payment plan</h2>
+                <div class="payment__description">We calculated the most convenient possible payment option for The Sapphire project</div>
+                <div class="payment__circle">
+                    <div id="piechart"></div>
+                </div>
+                
+        </div>
+    </section>
+
+    <section class="analytic">
+        <div class="container">
+            <h2 class="analytic__title">Analytic</h2>
+        </div>
+    </section>
+
+    <section class="brochure">
+        <div class="container">
+            <div class="brochure__imgs">
+                <div class="brochure__img" style="background-image: url('img/elara/card_1.png');"></div>
+                <div class="brochure__img" style="background-image: url('img/elara/card_3.png');"></div>
+            </div> 
+            <div class="brochure__btn">
+                <a href="object_books/MJL_Elara_Brochure.pdf" target="_blank" class="brochure__link">book visit</a> 
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__text">
+                Welcome to our real estate portal, designed to empower users in making informed decisions online. Here, you'll find comprehensive information about a diverse array of properties and real estate services. Please note that certain details, such as prices and special offers, are provided by our partners and are subject to change without prior notice.
+            </div>
+            <div class="footer__text">
+                While our content is based on thorough research, it does not constitute legal, professional, or predictive advice, and should not be construed as such. The inclusion of company listings on our site does not imply endorsement.
+            </div>
+            <div class="footer__copy">
+                © <script>document.writeln(new Date().getFullYear())</script>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal__consultation-overlay">
+        <div class="modal__consultation">
+            <div class="modal__consultation-close"><i class="fa-solid fa-xmark" style="color: #005780;"></i></div>
+            <div class="modal__consultation-message">Fill in the form and we will contact you</div>
+            <form type="submit" class="modal__consultation--form">
+                <input type="text" placeholder="Name">
+                <input type="hidden" class="phonecc" name="phonecc" value="">
+                <input type="phone" class="phone">
+                <button type="submit">send</button>    
+            </form> 
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+
+    <script src="js/intlTelInput.js"></script>
+    <script src="js/jquery.validate.min.js "></script>
+    <script src="js/device.min.js"></script>
+    <script src="js/card.js"></script>
+</body>
+</html>

@@ -115,7 +115,10 @@ li, ul {
 }
 .main__cards {
 }
-
+.card__mobile-wrapper {
+    display: flex;
+    gap: 32px;
+}
 .main__card {
     padding: 16px;
     border: 1px solid #e7e7e8;
@@ -161,7 +164,10 @@ li, ul {
     font-size: 14px;
     margin-top: 16px;
 }
-
+.card__left__description--mobile {
+    display: none;
+    text-align: center;
+}
 .card__location {
     display: flex;
     align-items: center;
@@ -195,9 +201,9 @@ li, ul {
 
 .card__rating-window {
     position: absolute;
-    top: -200%;
+    top: -350%;
     left: 20%;
-    width: 300px;
+    width: 560px;
     height: auto;
     background-color: #fff;
     border-radius: 8px;
@@ -212,7 +218,7 @@ li, ul {
 .card__rating:hover .card__rating-window {
     opacity: 1;
     z-index: 100;
-    top: -150%;
+    top: -250%;
 }
 .card__rating-title {
     font-size: 36px;
@@ -225,10 +231,18 @@ li, ul {
     flex-direction: column;
     gap: 4px;
 }
-
+.card__advantages li {
+    padding-left: 24px;
+    position: relative;
+    font-size: 14px;
+}
+.card__advantages li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
 .card__price {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 8px;
@@ -285,7 +299,9 @@ li, ul {
 
 
 /* QWIZ */
-
+.quiz {
+    margin-bottom: 32px;
+}
 .quiz .container {
     display: flex;
     justify-content: space-between;
@@ -321,4 +337,12 @@ li, ul {
 .quiz__button i {
     margin-left: 8px;
 }
-
+.footer {
+    margin-bottom: 36px;
+}
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
