@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				show: true,
 				title: "The most buyable for investment",
 			},
-			main_img: "sobha/card_1.jpg",
+			main_img: "sobha/card_8.jpg",
 			title: "Sobha Seahaven - Tower B",
 			description: 'Luxury waterfront living at Sobha SeaHaven, Dubai Harbour. Exclusive 1-4 bedroom apartments with stunning views, world-class amenities, and a prime location. Experience the epitome of elegance and sophistication.',
 			location: "Dubai Marina",
 			date_finish: 'Q2 2028',
-			rating: '9.3',
+			rating: '93',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["infinity leisure pool", "yacht/marina life", "private movie theatre", "health club with a sauna and steam room"],
@@ -27,12 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				show: true,
 				title: "Best buy for living",
 			},
-			main_img: "keturah-reserve/card_1.jpg",
+			main_img: "keturah-reserve/card_2.jpg",
 			title: "Keturah Reserve",
-			description: 'A luxurious project offering opulent waterfront mansions and residences in a modern community. Located in a fast-developing area with easy access to key landmarks. Features include stone facades, natural finishing, marble bathrooms, spacious rooms, home cinema, office, gym, pool, spa, and more. Developed by MAG Property, known for its quality and expertise. Ready by Q4 2024.',
+			description: 'A luxurious project offering opulent waterfront mansions and residences in a modern community. Located in a fast-developing area with easy access to key landmarks. Features include stone facades, natural finishing, marble bathrooms, spacious rooms, home cinema, office, gym, pool, spa, and more. Developed by MAG Property, known for its quality and expertise. Ready by Q1 2026.',
 			location: "Dubai Health",
 			date_finish: 'Q1 2026',
-			rating: '9.1',
+			rating: '91',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Spa, beauty salon", "rooftop terrace, Kids playground", "Beach Access to The Ritz-Carlton", "Jumeirah Hotel"],
@@ -44,14 +44,14 @@ document.addEventListener("DOMContentLoaded", () => {
 			filters: ["top", "one"],
 			banner: {
 				show: true,
-				title: "Most bought to rent",
+				title: "Most buy to rent out",
 			},
 			main_img: "damac-bay-2/card_1.jpg",
 			title: "Damac Bay 2",
 			description: 'Exclusive Skycrest Collection residences with stunning sea views, starting at AED 3.3 million. World-class amenities include Cavalli Museum, tropical treatment rooms, art & fashion studio, infinity pools, and beachfront F&B. Located in prestigious Dubai Harbour with easy access to major landmarks and airports. Scheduled for completion in January 2028.',
 			location: "Dubai Marina",
 			date_finish: 'Q4 2028',
-			rating: '8.9',
+			rating: '89',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Private beach", "Cavalli art & fashion interiors", "Spa and infinity swimming pools", "Cavalli lounge"],
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: 'Central Park at City Walk offers sleek, contemporary apartments with stunning park and skyline views. Amenities include pools, kids play area, sports courts, outdoor gym, spa, F&B outlets, and more. Located in a vibrant community with easy access to major landmarks in Dubai. Live surrounded by nature in the heart of the city.',
 			location: "City Walk",
 			date_finish: 'Q2 2027',
-			rating: '8.9',
+			rating: '89',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Running track, dog park", "Multi-use games and sports lawns", "Tennis and squash courts", "Outdoor barbecue areas"],
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: 'Hyde Walk by Imtiaz offers modern elegance and convenience in the heart of Dubai, with studios and 1 BHK options. Amenities include a furnished club room, fully equipped gym, rooftop pool, sauna, kids play area, BBQ area, and more. The project is set to be completed by Q3 2025, showcasing dedication to quality and safety. Imtiaz Developments aims to deliver a seamless blend of luxury and city living, inviting residents to experience the vibrant essence of Dubai effortlessly.',
 			location: "Jumeriah Garden",
 			date_finish: 'Q4 2025',
-			rating: '8.8',
+			rating: '88',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["ROI to 8%", "Rooftop pool", "6 minutes to the beach", "Activity for kids"],
@@ -104,12 +104,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				show: false,
 				title: "",
 			},
-			main_img: "the-crestmark/card_1.jpg",
+			main_img: "the-crestmark/card_5.jpg",
 			title: "The Crestmark",
 			description: "A luxurious residential project in Business Bay offering contemporary design, scenic views of Dubai Water Canal, and a cosmopolitan lifestyle. Features include a resort-style pool deck, a mini-city experience for children, a well-equipped fitness studio, and high-quality finishes throughout. Strategically located near iconic landmarks and surrounded by upscale amenities, The Crestmark promises a sophisticated and relaxing living experience.",
 			location: "Business Bay",
 			date_finish: 'Q2 2026',
-			rating: '8.8',
+			rating: '88',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Resort-style swimming pool deck", "Kidtropoli", "intelligent home system"], 
@@ -123,12 +123,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				show: false,
 				title: "",
 			},
-			main_img: "oceanz-by-danube/card_1.jpg",
+			main_img: "oceanz-by-danube/card_2.jpg",
 			title: "Oceanz By Danube",
 			description: "Oceanz by Danube is a luxurious waterfront development in Dubai Maritime City. It offers stunning sea views, Italian interiors, and luxury furnishings. With over 40 amenities, prime location, and high-quality materials, it promises a sophisticated lifestyle. The project is by Danube Properties, known for its best payment plan and timely delivery. Enjoy easy access to major areas of Dubai and a range of attractions within minutes. Experience unparalleled luxury and comfort at Oceanz by Danube.",
 			location: "Dubai Maritime",
 			date_finish: 'Q1 2027',
-			rating: '8.6',
+			rating: '86',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Interiors & furnishing by Tonino Lamborghini Casa", "best payment plan", "Breathtaking vistas of the vast Arabian Gulf & sunset"],
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: "Rove Home at Marasi Drive, Business Bay offers contemporary lifestyle living with value, efficiency, and a vibrant atmosphere. The project features branded fully furnished residences, expandable living solutions, smart home technology, and innovative design by Zebra and Studio Feel. Residents can enjoy exclusive perks, 50+ amenities, and endless entertainment options, creating a dynamic urban community. With a prime location in Business Bay, Rove Home is set to redefine city living.",
 			location: "Business Bay",
 			date_finish: 'Q1 2027',
-			rating: '8.6',
+			rating: '86',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Branded fully furnished residences", "smart home technology, outdoor cinema", "co-working spaces, SKY GARDEN Outdoor", "ROOFTOP Viewing deck "],
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: "UH by Ellington offers centrally located apartments with holistic design, expansive views of Jumeirah Islands and Marina Skyline, and outstanding amenities like a lap pool, kids' splash pad, and fitness studio. Located in Jumeirah Lakes Towers, it provides a community vibe with dining, shopping, and entertainment options. The sleek and modern apartments feature home automation systems, while the clubhouse offers elegant lounge spaces and a working area. The pool deck includes a lap pool, sun loungers, and cabanas. UH by Ellington merges nature with modern design for a truly unique living experience.",
 			location: "Jumeirah Lakes",
 			date_finish: 'Q1 2026',
-			rating: '8.5',
+			rating: '85',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["37m lap pool", "padel court, cinema room", "penthouse lounge", "home automation"],
@@ -181,12 +181,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				show: false,
 				title: "",
 			},
-			main_img: "sobha/card_1.jpg",
+			main_img: "sobha/card_8.jpg",
 			title: "Sobha Seahaven - Tower B",
 			description: 'Luxury waterfront living at Sobha SeaHaven, Dubai Harbour. Exclusive 1-4 bedroom apartments with stunning views, world-class amenities, and a prime location. Experience the epitome of elegance and sophistication.',
 			location: "Dubai Marina",
 			date_finish: 'Q2 2028',
-			rating: '9.0',
+			rating: '90',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["infinity leisure pool", "yacht/marina life", "private movie theatre", "health club with a sauna and steam room"],
@@ -200,12 +200,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				show: false,
 				title: "",
 			},
-			main_img: "the-crestmark/card_1.jpg",
+			main_img: "the-crestmark/card_5.jpg",
 			title: "The Crestmark",
 			description: "A luxurious residential project in Business Bay offering contemporary design, scenic views of Dubai Water Canal, and a cosmopolitan lifestyle. Features include a resort-style pool deck, a mini-city experience for children, a well-equipped fitness studio, and high-quality finishes throughout. Strategically located near iconic landmarks and surrounded by upscale amenities, The Crestmark promises a sophisticated and relaxing living experience.",
 			location: "Business Bay",
 			date_finish: 'Q2 2026',
-			rating: '8.6',
+			rating: '86',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Resort-style swimming pool deck", "Kidtropoli", "intelligent home system"], 
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: "Discover Elara, a new addition to Madinat Jumeirah Living offering luxury apartments with modern design and iconic views. Surrounded by beaches and green spaces, residents can enjoy a vibrant community with top-notch amenities. Located near major attractions and business hubs, it provides a truly enriching lifestyle experience. Live extraordinary at Elara.",
 			location: "Madinat Jumeirah",
 			date_finish: 'Q4 2026',
-			rating: '8.6',
+			rating: '86',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Modern interiors", "breathtaking views of the Burj Al Arab", "Bridge to Madinat Jumeirah", "Day Care Centres, Parks and Open Spaces"],
@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: "Rove Home at Marasi Drive, Business Bay offers contemporary lifestyle living with value, efficiency, and a vibrant atmosphere. The project features branded fully furnished residences, expandable living solutions, smart home technology, and innovative design by Zebra and Studio Feel. Residents can enjoy exclusive perks, 50+ amenities, and endless entertainment options, creating a dynamic urban community. With a prime location in Business Bay, Rove Home is set to redefine city living.",
 			location: "Business Bay",
 			date_finish: 'Q1 2027',
-			rating: '8.4',
+			rating: '84',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Branded fully furnished residences", "smart home technology, outdoor cinema", "co-working spaces, SKY GARDEN Outdoor", "ROOFTOP Viewing deck "],
@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: 'Exclusive Skycrest Collection residences with stunning sea views, starting at AED 3.3 million. World-class amenities include Cavalli Museum, tropical treatment rooms, art & fashion studio, infinity pools, and beachfront F&B. Located in prestigious Dubai Harbour with easy access to major landmarks and airports. Scheduled for completion in January 2028.',
 			location: "Dubai Marina",
 			date_finish: 'Q4 2028',
-			rating: '8.8',
+			rating: '88',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Private beach", "Cavalli art & fashion interiors", "Spa and infinity swimming pools", "Cavalli lounge"],
@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: "Experience the epitome of luxury living at Armani Beach Residences, a collaboration between Armani Group and Arada Developer. Designed by Tadao Ando, the residences offer a blend of Japanese elegance and contemporary opulence. Enjoy exclusive access to pristine beaches, a private Beach Club, and world-class amenities. With a focus on sustainability and smart home technology, this development promises a lifestyle of unparalleled luxury and refinement. Located on the iconic Palm Jumeirah, it is a true crown jewel of Dubai's luxury real estate market.",
 			location: "Palm Jumeirah",
 			date_finish: 'Q4 2026',
-			rating: '8.8',
+			rating: '88',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Japanese elegance", "smart home tech", "Private Beach Club", "90,000 square feet and are all immaculately designed by Armani/Casa"],
@@ -296,12 +296,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				show: false,
 				title: "",
 			},
-			main_img: "the-crestmark/card_1.jpg",
+			main_img: "the-crestmark/card_5.jpg",
 			title: "The Crestmark",
 			description: "A luxurious residential project in Business Bay offering contemporary design, scenic views of Dubai Water Canal, and a cosmopolitan lifestyle. Features include a resort-style pool deck, a mini-city experience for children, a well-equipped fitness studio, and high-quality finishes throughout. Strategically located near iconic landmarks and surrounded by upscale amenities, The Crestmark promises a sophisticated and relaxing living experience.",
 			location: "Business Bay",
 			date_finish: 'Q2 2026',
-			rating: '8.4',
+			rating: '84',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Resort-style swimming pool deck", "Kidtropoli", "intelligent home system"], 
@@ -321,7 +321,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: 'VELA, a luxury waterfront project in Dubai, offers 38 residences with stunning views of the marina and Burj Khalifa. Unique amenities include L-shaped corner pools, a triple-height gym, cinema room, and private spa. Managed by Dorchester Collection, residents enjoy five-star service and exclusive access to beach clubs. Designed by Foster + Partners and Gilles & Boissier, VELA embodies elegance and sophistication, redefining luxury living in Dubai.',
 			location: "Business Bay",
 			date_finish: 'Q3 2026',
-			rating: '8.3',
+			rating: '83',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Cinema room", "private spa suite and salon", "triple-height gym", "Magnificent 100-meter private white sand beach"],
@@ -335,12 +335,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				show: false,
 				title: "",
 			},
-			main_img: "keturah-reserve/card_1.jpg",
+			main_img: "keturah-reserve/card_2.jpg",
 			title: "Keturah Reserve",
-			description: 'A luxurious project offering opulent waterfront mansions and residences in a modern community. Located in a fast-developing area with easy access to key landmarks. Features include stone facades, natural finishing, marble bathrooms, spacious rooms, home cinema, office, gym, pool, spa, and more. Developed by MAG Property, known for its quality and expertise. Ready by Q4 2024.',
+			description: 'A luxurious project offering opulent waterfront mansions and residences in a modern community. Located in a fast-developing area with easy access to key landmarks. Features include stone facades, natural finishing, marble bathrooms, spacious rooms, home cinema, office, gym, pool, spa, and more. Developed by MAG Property, known for its quality and expertise. Ready by Q1 2026.',
 			location: "Dubai Health",
 			date_finish: 'Q1 2026',
-			rating: '7.8',
+			rating: '78',
 			rating_stars: ['full', 'full', 'full', 'full', 'empty'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Spa, beauty salon", "rooftop terrace, Kids playground", "Beach Access to The Ritz-Carlton", "Jumeirah Hotel"],
@@ -359,7 +359,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: 'Exclusive Skycrest Collection residences with stunning sea views, starting at AED 3.3 million. World-class amenities include Cavalli Museum, tropical treatment rooms, art & fashion studio, infinity pools, and beachfront F&B. Located in prestigious Dubai Harbour with easy access to major landmarks and airports. Scheduled for completion in January 2028.',
 			location: "Dubai Marina",
 			date_finish: 'Q4 2028',
-			rating: '7.7',
+			rating: '77',
 			rating_stars: ['full', 'full', 'full', 'full', 'empty'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Private beach", "Cavalli art & fashion interiors", "Spa and infinity swimming pools", "Cavalli lounge"],
@@ -373,12 +373,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				show: false,
 				title: "",
 			},
-			main_img: "damac-bay/card_1.jpg",
+			main_img: "damac-bay/card_2.jpg",
 			title: "Damac Bay",
 			description: "Luxury seafront apartments in Dubai Harbour, DAMAC Bay by Cavalli offers a unique blend of true luxury and maritime bliss. With nautical-themed interiors by Cavalli, every unit enjoys stunning sea views. Amenities include a private beach, three infinity pools, rooftop opera pavilion, and Cavalli lounge. Located in the vibrant Dubai Harbour district, DAMAC Bay rekindles Dubai's connection to the sea. The development offers a range of luxury 1-, 2-, and 3-bedroom units, as well as super-luxury 3- to 5-bedroom duplex units on the higher floors. Experience the essence of an untamed ocean at DAMAC Bay by Cavalli.",
 			location: "Dubai Harbour",
 			date_finish: 'Q1 2027',
-			rating: '7.7',
+			rating: '77',
 			rating_stars: ['full', 'full', 'full', 'full', 'empty'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Rooftop opera pavilion, water fountain", "virtual reality school, wave pool", "luxury snorkeling experience", "rooftop water maze"],
@@ -397,7 +397,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: "Discover Elara, a new addition to Madinat Jumeirah Living offering luxury apartments with modern design and iconic views. Surrounded by beaches and green spaces, residents can enjoy a vibrant community with top-notch amenities. Located near major attractions and business hubs, it provides a truly enriching lifestyle experience. Live extraordinary at Elara.",
 			location: "Madinat Jumeirah",
 			date_finish: 'Q4 2026',
-			rating: '7.6',
+			rating: '76',
 			rating_stars: ['full', 'full', 'full', 'full', 'empty'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Modern interiors", "breathtaking views of the Burj Al Arab", "Bridge to Madinat Jumeirah", "Day Care Centres, Parks and Open Spaces"],
@@ -417,7 +417,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: 'Experience ultra-luxury living in the heart of Dubai with Casa Canal Residences. Offering penthouses, sky villas, and sky mansions with stunning water canal and Safa Park views. Private elevators, exclusive amenities, and personalized services cater to your every need. Anticipated delivery in Q1, 2026. A truly opulent and tailored luxury living experience.',
 			location: "Al Safa",
 			date_finish: 'Q1 2026',
-			rating: '8.2',
+			rating: '82',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Private elevators", "24/7 luxury concierge service", "Outdoor terraces", "Private swimming pools"],
@@ -436,7 +436,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: "Rove Home at Marasi Drive, Business Bay offers contemporary lifestyle living with value, efficiency, and a vibrant atmosphere. The project features branded fully furnished residences, expandable living solutions, smart home technology, and innovative design by Zebra and Studio Feel. Residents can enjoy exclusive perks, 50+ amenities, and endless entertainment options, creating a dynamic urban community. With a prime location in Business Bay, Rove Home is set to redefine city living.",
 			location: "Business Bay",
 			date_finish: 'Q1 2027',
-			rating: '8.2',
+			rating: '82',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Branded fully furnished residences", "smart home technology, outdoor cinema", "co-working spaces, SKY GARDEN Outdoor", "ROOFTOP Viewing deck "],
@@ -455,7 +455,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: 'Hyde Walk by Imtiaz offers modern elegance and convenience in the heart of Dubai, with studios and 1 BHK options. Amenities include a furnished club room, fully equipped gym, rooftop pool, sauna, kids play area, BBQ area, and more. The project is set to be completed by Q3 2025, showcasing dedication to quality and safety. Imtiaz Developments aims to deliver a seamless blend of luxury and city living, inviting residents to experience the vibrant essence of Dubai effortlessly.',
 			location: "Jumeriah Garden",
 			date_finish: 'Q4 2025',
-			rating: '8.2',
+			rating: '82',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["ROI to 8%", "Rooftop pool", "6 minutes to the beach", "Activity for kids"],
@@ -469,12 +469,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				show: false,
 				title: "",
 			},
-			main_img: "the-crestmark/card_1.jpg",
+			main_img: "the-crestmark/card_5.jpg",
 			title: "The Crestmark",
 			description: "A luxurious residential project in Business Bay offering contemporary design, scenic views of Dubai Water Canal, and a cosmopolitan lifestyle. Features include a resort-style pool deck, a mini-city experience for children, a well-equipped fitness studio, and high-quality finishes throughout. Strategically located near iconic landmarks and surrounded by upscale amenities, The Crestmark promises a sophisticated and relaxing living experience.",
 			location: "Business Bay",
 			date_finish: 'Q2 2026',
-			rating: '8.2',
+			rating: '82',
 			rating_stars: ['full', 'full', 'full', 'full', 'half'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Resort-style swimming pool deck", "Kidtropoli", "intelligent home system"], 
@@ -493,7 +493,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			description: 'Central Park at City Walk offers sleek, contemporary apartments with stunning park and skyline views. Amenities include pools, kids play area, sports courts, outdoor gym, spa, F&B outlets, and more. Located in a vibrant community with easy access to major landmarks in Dubai. Live surrounded by nature in the heart of the city.',
 			location: "City Walk",
 			date_finish: 'Q2 2027',
-			rating: '8.0',
+			rating: '80',
 			rating_stars: ['full', 'full', 'full', 'full', 'empty'],
 			rating_window: 'This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity.', 
 			advantages: ["Running track, dog park", "Multi-use games and sports lawns", "Tennis and squash courts", "Outdoor barbecue areas"],
@@ -521,7 +521,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					<li>
 						<i class="fa-solid fa-circle-check" 
 						style="color: #fe6540;margin-right: 4px;"></i>
-						${advantage}
+						${advantage[0].toUpperCase() + advantage.slice(1)}
 					</li>`
 			})
 	
@@ -687,40 +687,6 @@ tabs.forEach(tab => {
 })
 
 
-
-// tabs.forEach(tab => {
-// 	tab.addEventListener("click", () => {
-// 		if (tab.classList.contains("active")) {
-// 			tab.classList.remove("active");	
-
-// 			document.location.href = document.location.href.replace(`#${tab.getAttribute('data-filter')}`, '')
-
-// 			tabsContent.forEach(content => {
-// 				content.classList.remove("hide");
-// 			})
-// 		} else {
-// 			tabs.forEach(i => {
-// 				i.classList.remove("active");		
-// 			})
-// 			tab.classList.add("active");
-
-// 			let index = document.location.href.indexOf("#");
-// 			let result = document.location.href.substring(0, index);
-// 			document.location.href = `${result}#${tab.getAttribute('data-filter')}`
-
-// 			tabsContent.forEach(content => {
-// 				if (content.getAttribute('data-filters').includes(tab.getAttribute('data-filter'))) {
-// 					content.classList.remove("hide");
-// 				} else {
-// 					content.classList.add("hide");
-// 				}
-// 			})
-// 		}
-	
-// 	})
-// })
-
-
 projectTabs.forEach(project => {
 	project.addEventListener("mouseover", () => {
 		projectLayouts.forEach(layout => {
@@ -754,6 +720,12 @@ const selectors_step1 = document.querySelectorAll(".modal__step--1 .modal__conte
 	selectors_step5 = document.querySelectorAll(".modal__step--5 .modal__content_variant"),
 	selectors_step6 = document.querySelector(".modal__form input"),
 	step2_input = document.querySelector(".modal__bottom-input input");
+
+const input_status = document.querySelector('input[name="status"]'),
+	input_region = document.querySelector('input[name="region"]'),
+	input_budget = document.querySelector('input[name="budget"]'),
+	input_option = document.querySelector('input[name="option"]'),
+	input_type = document.querySelector('input[name="type"]');
 
 quizBtn.addEventListener("click", (e) => {
 	e.preventDefault()
@@ -791,8 +763,18 @@ confirmNext.addEventListener("click", (e) => {
 
 btns.forEach(( btn, i ) => {
 	btn.addEventListener("click", () => {
-		modals[i].style = "display: none;"	
-		modals[i + 1].style = "display: flex;"
+		if (i < 5) {
+			modals[i].style = "display: none;"	
+			modals[i + 1].style = "display: flex;"
+		}
+		
+		if (i === 4) {
+			input_status.value = result_step1
+			input_region.value = result_step2 || step2_other
+			input_budget.value = result_step3
+			input_option.value = result_step4
+			input_type.value = result_step5
+		}
 	})
 })
 
@@ -923,26 +905,6 @@ step2_input.addEventListener("input", (e) => {
 	}
 })
 
-btnSubmit.addEventListener("click", e => {
-	e.preventDefault()
-
-	console.log({
-		step1: result_step1,
-		district: step2_other ? result_step2  + ", " + step2_other : result_step2,
-		price: result_step3,
-		step4: result_step4,
-		step5: result_step5,
-		email: result_step6
-	});
-
-
-	quizOverlay.style = "opacity: 0; visibility: hidden;"
-	modals.forEach(modal => {
-		modal.style = "display: none;";
-	})
-})
-
-
 const modalConsultation = document.querySelector('.modal__consultation-overlay'),
 	consultationClose = document.querySelector('.modal__consultation-close i')
 
@@ -950,7 +912,8 @@ document.querySelector('.header__links').addEventListener("click", (e) => {
 	e.preventDefault()
 
 	modalConsultation.style = "opacity: 1; visibility: visible;"	
-}) 
+})
+
 
 modalConsultation.addEventListener("click", e => {
 	if (e.target === modalConsultation) {
@@ -962,23 +925,23 @@ consultationClose.addEventListener("click", () => {
 	modalConsultation.style = "opacity: 0; visibility: hidden;"
 })
 
+// btnSubmit.addEventListener("click", e => {
+// 	e.preventDefault()
+
+// 	console.log({
+// 		step1: result_step1,
+// 		district: step2_other ? result_step2  + ", " + step2_other : result_step2,
+// 		price: result_step3,
+// 		step4: result_step4,
+// 		step5: result_step5,
+// 		email: result_step6
+// 	});
 
 
-
-// selectors_step6.addEventListener("input", () => {
-// 	result_step6 = selectors_step6.value
-
-// 	if (!result_step6) {
-// 		const btn = document.querySelector(".modal__button--submit")
-// 		btn.disabled = true
-// 		btn.style = 'background-color: gray;'
-// 	}
-
-// 	if (result_step6) {
-// 		const btn = document.querySelector(".modal__button--submit")
-// 		btn.disabled = false
-// 		btn.style = 'background-color: #f84c21;'
-// 	}
+// 	quizOverlay.style = "opacity: 0; visibility: hidden;"
+// 	modals.forEach(modal => {
+// 		modal.style = "display: none;";
+// 	})
 // })
 
 var telCode = document.getElementsByClassName("phone");

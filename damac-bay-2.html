@@ -67,6 +67,34 @@
     <link rel="stylesheet" type="text/css" href="css/intlTelInput.css">
 </head>
 <body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]
+            function(){(m[i].a=m[i].a[]).push(arguments)};
+            m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(97342493, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/97342493" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0THLFNFNC0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0THLFNFNC0');
+    </script>
     <header class="header">
         <div class="container">
             <a href="index.html" class="header__logo">
@@ -84,7 +112,7 @@
                 <h1 class="card__info_title card__info_title--mobile">Damac Bay 2</h1>
                 <div class="card__info_rating card__info_rating--mobile">
                     <div class="card__rating-stars">
-                        <span class="card__info_rating-title">8.9</span>
+                        <span class="card__info_rating-title">89</span>
                         <i class="fa-solid fa-star" style="color: #fe6540;"></i>
                         <i class="fa-solid fa-star" style="color: #fe6540;"></i>
                         <i class="fa-solid fa-star" style="color: #fe6540;"></i>
@@ -118,7 +146,7 @@
                     <h1 class="card__info_title">Damac Bay 2</h1>
                     <div class="card__info_rating">
                         <div class="card__rating-stars">
-                            <span class="card__info_rating-title">8.9</span>
+                            <span class="card__info_rating-title">89</span>
                             <i class="fa-solid fa-star" style="color: #fe6540;"></i>
                             <i class="fa-solid fa-star" style="color: #fe6540;"></i>
                             <i class="fa-solid fa-star" style="color: #fe6540;"></i>
@@ -139,11 +167,13 @@
                         <span>Damac</span>
                     </div>
                     <div class="card__info_form__title">Fill in the form and we will contact you</div>
-                    <form action="" type="submit" class="card__info_form">
-                        <input type="text" placeholder="Name">
+                    <form action="" type="submit" class="card__info_form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="371074fb-f397-4b0a-ba7f-3d180a8a9dda">
+                        <input type="text" placeholder="name" name="name">
                         <input type="hidden" class="phonecc" name="phonecc" value="">
-                        <input type="phone" class="phone">
+                        <input type="phone" class="phone" name="phone">
                         <button type="submit">send</button>
+                        <div id="result"></div> 
                     </form>
                 </div>
             </div>
@@ -305,11 +335,11 @@
     <section class="brochure">
         <div class="container">
             <div class="brochure__imgs">
-                <div class="brochure__img" style="background-image: url('img/damac-bay-2/card_2.jpg');"></div>
-                <div class="brochure__img" style="background-image: url('img/damac-bay-2/card_3.jpg');"></div>
+                <div class="brochure__img" style="background-image: url('img/damac-bay-2/analis_1.png');"></div>
+                <div class="brochure__img" style="background-image: url('img/damac-bay-2/analis_2.png');"></div>
             </div> 
-            <div class="brochure__btn">
-                <a href="./object_books/bay-2-by-DAMAC.pdf" target="_blank" class="brochure__link">book visit</a> 
+            <div class="brochure__btn header__links">
+                <a href="" class="brochure__link">book visit</a> 
             </div>
             
         </div>
@@ -333,11 +363,13 @@
         <div class="modal__consultation">
             <div class="modal__consultation-close"><i class="fa-solid fa-xmark" style="color: #005780;"></i></div>
             <div class="modal__consultation-message">Fill in the form and we will contact you</div>
-            <form type="submit" class="modal__consultation--form">
-                <input type="text" placeholder="Name">
+            <form class="modal__consultation--form telegram_form" action="https://api.web3forms.com/submit" method="POST" id="form">
                 <input type="hidden" class="phonecc" name="phonecc" value="">
-                <input type="phone" class="phone">
-                <button type="submit">send</button>    
+                <input type="hidden" name="access_key" value="371074fb-f397-4b0a-ba7f-3d180a8a9dda">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="tel" class="phone" name="phone" required>
+                <button type="submit">send</button> 
+                <div id="result"></div>   
             </form> 
         </div>
     </div>
@@ -351,5 +383,11 @@
     <script src="js/jquery.validate.min.js "></script>
     <script src="js/device.min.js"></script>
     <script src="js/card.js"></script>
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="js/mailer.js"></script>
+
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a4a2738e-5528-4225-9c9c-c9724bf5baff" 
+    data-blockingmode="auto" type="text/javascript"></script>
 </body>
 </html>

@@ -39,10 +39,12 @@ galleryBtn.addEventListener("click", () => {
 const modalConsultation = document.querySelector('.modal__consultation-overlay'),
 	consultationClose = document.querySelector('.modal__consultation-close i')
 
-document.querySelector('.header__links').addEventListener("click", (e) => {
-	e.preventDefault()
-
-	modalConsultation.style = "opacity: 1; visibility: visible;"	
+document.querySelectorAll('.header__links').forEach(link => {
+	link.addEventListener("click", (e) => {
+		e.preventDefault()
+	
+		modalConsultation.style = "opacity: 1; visibility: visible;"	
+	}) 
 }) 
 
 modalConsultation.addEventListener("click", e => {

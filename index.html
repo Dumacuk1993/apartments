@@ -16,6 +16,35 @@
     <link rel="stylesheet" type="text/css" href="css/intlTelInput.css">
 </head>
 <body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]
+            function(){(m[i].a=m[i].a[]).push(arguments)};
+            m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(97342493, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/97342493" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0THLFNFNC0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0THLFNFNC0');
+    </script>
+
     <header class="header">
         <div class="container">
             <a href="" class="header__logo">
@@ -259,15 +288,15 @@ While our content is based on thorough research, it does not constitute legal, p
                                 <img src="./img/quiz/quiz_4.1.svg" alt="">
                                 <div class="modal__variant_title">Investments</div>
                             </div>
-                            <div class="modal__content_variant" data-value="vacation">
+                            <div class="modal__content_variant" data-value="for living">
                                 <img src="./img/quiz/quiz_4.2.svg" alt="">
-                                <div class="modal__variant_title">Vacation</div>
+                                <div class="modal__variant_title">For Living</div>
                             </div>
                         </div>
                         <div class="modal__content_variants-wrapper">
-                            <div class="modal__content_variant" data-value="accommodation">
+                            <div class="modal__content_variant" data-value="for rent out">
                                 <img src="./img/quiz/quiz_4.3.svg" alt="">
-                                <div class="modal__variant_title">Hotel</div>
+                                <div class="modal__variant_title">For rent out</div>
                             </div>
                             <div class="modal__content_variant" data-value="other">
                                 <img src="./img/quiz/quiz_4.4.svg" alt="">
@@ -321,11 +350,18 @@ While our content is based on thorough research, it does not constitute legal, p
                 <div class="modal__content">
                     <div class="modal__content_title">Thanks for taking the time to complete this form.</div>
                     <div class="modal__consultation-message">Fill in the form and we will contact you</div>
-                    <form type="submit" class="modal__consultation--form">
-                        <input type="text" placeholder="Name">
+                    <form type="submit" class="modal__consultation--form telegram_form2" action="https://api.web3forms.com/submit" method="POST" id="form2">
                         <input type="hidden" class="phonecc" name="phonecc" value="">
-                        <input type="tel" class="phone_mask phone" style="padding-left: 76px !important;">
-                        <button type="submit" class="modal__button modal__button--submit">Complete Submission</button>    
+                        <input type="hidden" name="access_key" value="371074fb-f397-4b0a-ba7f-3d180a8a9dda">
+                        <input type="hidden" name="status" value="">
+                        <input type="hidden" name="region" value=""> 
+                        <input type="hidden" name="budget" value="">
+                        <input type="hidden" name="option" value="">
+                        <input type="hidden" name="type" value="">
+                        <input type="text" placeholder="name" name="name">
+                        <input type="tel" class="phone_mask phone" name="phone">
+                        <button type="submit" class="modal__button modal__button--submit">Complete Submission</button> 
+                        <div id="result"></div>    
                     </form> 
   
                 </div>
@@ -351,16 +387,15 @@ While our content is based on thorough research, it does not constitute legal, p
         <div class="modal__consultation">
             <div class="modal__consultation-close"><i class="fa-solid fa-xmark" style="color: #005780;"></i></div>
             <div class="modal__consultation-message">Fill in the form and we will contact you</div>
-            <form class="modal__consultation--form" action="https://api.web3forms.com/submit" method="POST">
+            <form class="modal__consultation--form telegram_form" action="https://api.web3forms.com/submit" method="POST" id="form">
                 <input type="hidden" class="phonecc" name="phonecc" value="">
-                <input type="hidden" name="access_key" value="228369fc-b10c-4ca9-8df9-241d69526b46">
-
+                <input type="hidden" name="access_key" value="371074fb-f397-4b0a-ba7f-3d180a8a9dda">
                 <input type="text" placeholder="Name" name="name" required>
                 <input type="tel" class="phone" name="phone" required>
-                <button type="submit">send</button>    
+                <button type="submit">send</button> 
+                <div id="result"></div>   
             </form> 
         </div>
-         
     </div>
 
 
@@ -374,63 +409,11 @@ While our content is based on thorough research, it does not constitute legal, p
     <script src="js/jquery.validate.min.js "></script>
     <script src="js/device.min.js"></script>
     <script src="js/script.js"></script>
-
-    
-    <!-- <form method="POST" id="form">
-
-        <input type="hidden" name="access_key" value="228369fc-b10c-4ca9-8df9-241d69526b46">
-        <input type="hidden" class="phonecc" name="phonecc" value="">
-        <input type="text" name="name" required>
-        <input type="email" name="email" required>
-        <textarea name="message" required></textarea>
-    
-        <button type="submit">Submit Form</button>
-    
-        <div id="result"></div>
-    
-    </form>
     
     <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="js/mailer.js"></script>
     
-    <script>
-    const form = document.getElementById('form');
-    const result = document.getElementById('result');
-    
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(form);
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
-      result.innerHTML = "Please wait..."
-    
-        fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: json
-            })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    result.innerHTML = "Form submitted successfully";
-                } else {
-                    console.log(response);
-                    result.innerHTML = json.message;
-                }
-            })
-            .catch(error => {
-                console.log(error);
-                result.innerHTML = "Something went wrong!";
-            })
-            .then(function() {
-                form.reset();
-                setTimeout(() => {
-                    result.style.display = "none";
-                }, 3000);
-            });
-    });
-    </script> -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a4a2738e-5528-4225-9c9c-c9724bf5baff" 
+    data-blockingmode="auto" type="text/javascript"></script>
 </body>
 </html>

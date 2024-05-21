@@ -58,6 +58,7 @@
     }
     .card__left__img img {
         width: 100%;
+        height: auto;
     }
     .card__info {
         gap: 6px;
