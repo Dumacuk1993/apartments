@@ -165,7 +165,7 @@ const telegram_send2 = (form) => {
                 setTimeout(() => {
                     result.style.display = "none";
                     modalConsultation.style = "opacity: 0; visibility: hidden;"
-                }, 1000);
+                }, 100);
             });
     });
     
@@ -242,11 +242,11 @@ const telegram_send2 = (form) => {
                     form2.reset();
                     setTimeout(() => {
                         result.style.display = "none";
-                        	quizOverlay.style = "opacity: 0; visibility: hidden;"
-                        	modals.forEach(modal => {
-                        		modal.style = "display: none;";
-                        	})
-                    }, 1000);
+                        quizOverlay.style = "opacity: 0; visibility: hidden;"
+                        modals.forEach(modal => {
+                            modal.style = "display: none;";
+                        })
+                    }, 100);
               });
       }); 
 })

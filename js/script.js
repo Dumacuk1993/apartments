@@ -607,14 +607,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 	
 	let index = document.location.href.indexOf("#") + 1;
-
 	if (!index) {
 		objects_list.innerHTML = filteredData().join('')
 	} else {
 		let result = document.location.href;
-		console.log(result.substring(index, result[length - 1]));
-
-		objects_list.innerHTML = filteredData(result.substring(index, result[length - 1])).join('')
+		objects_list.innerHTML = filteredData(result.substring(index, result.length)).join('')
 	}
 
 	let result_step1 = null,

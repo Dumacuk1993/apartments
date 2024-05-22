@@ -69,10 +69,8 @@
 <body>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]
-            function(){(m[i].a=m[i].a[]).push(arguments)};
-            m[i].l=1*new Date();
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
@@ -119,6 +117,9 @@
                         <i class="fa-solid fa-star" style="color: #fe6540;"></i>
                         <i class="fa-solid fa-star-half-stroke" style="color: #fe6540;"></i>
                     </div> 
+                    <div class="card__rating-window">
+                        This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity. 
+                    </div>
                 </div>
                 <div class="card__gallery">
                     <div class="card__gallery-item card__gallery-item_fst--1"></div>
@@ -153,6 +154,9 @@
                             <i class="fa-solid fa-star" style="color: #fe6540;"></i>
                             <i class="fa-solid fa-star-half-stroke" style="color: #fe6540;"></i>
                         </div> 
+                        <div class="card__rating-window">
+                            This rating  is engineered by us and our advisors, deriving from a decade of experience investing, analyzing and writing about real estate in Dubai. We calculate it dynamically, using a combination of quantitative and qualitative data points. Each of our ratings is sorted from best to worst, which means we do not control each individual rating - they are dynamic and data-driven, ensuring objectivity. 
+                        </div>
                     </div>
                     <div class="card__info_price">
                         price per m2 from:
@@ -169,6 +173,7 @@
                     <div class="card__info_form__title">Fill in the form and we will contact you</div>
                     <form action="" type="submit" class="card__info_form" action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="371074fb-f397-4b0a-ba7f-3d180a8a9dda">
+                        <input type="hidden" name="subject" value="Заявка c Keturah Reserve из главной формы">
                         <input type="text" placeholder="name" name="name">
                         <input type="hidden" class="phonecc" name="phonecc" value="">
                         <input type="phone" class="phone" name="phone">
@@ -343,9 +348,14 @@
 
     <section class="brochure">
         <div class="container">
-            <div class="brochure__imgs">
-                <div class="brochure__img" style="background-image: url('img/keturah-reserve/analis_1.png');"></div>
-                <div class="brochure__img" style="background-image: url('img/keturah-reserve/analis_2.png');"></div>
+            <div class="brochure__imgs gallery2">
+                <a href="./img/keturah-reserve/analis_1.png" class="brochure__img" rel="rel1">
+                    <img src="./img/keturah-reserve/analis_1.png" alt="">
+                </a>
+            
+                <a href="./img/keturah-reserve/analis_2.png" class="brochure__img" rel="rel1">
+                    <img src="./img/keturah-reserve/analis_2.png" alt="">
+                </a>
             </div> 
             <div class="brochure__btn header__links">
                 <a href="" class="brochure__link">book visit</a> 
@@ -372,13 +382,14 @@
         <div class="modal__consultation">
             <div class="modal__consultation-close"><i class="fa-solid fa-xmark" style="color: #005780;"></i></div>
             <div class="modal__consultation-message">Fill in the form and we will contact you</div>
-            <form class="modal__consultation--form telegram_form" action="https://api.web3forms.com/submit" method="POST" id="form">
-                <input type="hidden" class="phonecc" name="phonecc" value="">
+            <form action="" type="submit" class="card__info_form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="subject" value="Заявка c Keturah Reserve из формы get consultation">
                 <input type="hidden" name="access_key" value="371074fb-f397-4b0a-ba7f-3d180a8a9dda">
-                <input type="text" placeholder="Name" name="name" required>
-                <input type="tel" class="phone" name="phone" required>
-                <button type="submit">send</button> 
-                <div id="result"></div>   
+                <input type="text" placeholder="name" name="name">
+                <input type="hidden" class="phonecc" name="phonecc" value="">
+                <input type="phone" class="phone" name="phone">
+                <button type="submit">send</button>
+                <div id="result"></div> 
             </form> 
         </div>
     </div>

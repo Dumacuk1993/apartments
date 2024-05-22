@@ -198,7 +198,10 @@ li, ul {
     position: relative;
     transition: all .7s;
 }
-
+.card__info_rating {
+    position: relative;
+    cursor: pointer;
+}
 .card__rating-window {
     position: absolute;
     top: -350%;
@@ -214,11 +217,18 @@ li, ul {
     transition: all .7s;
     cursor: default;
 }
-
+.card__info_rating .card__rating-window {
+    left: -40%;
+    top: -650%;   
+}
+.card__info_rating:hover .card__rating-window,
 .card__rating:hover .card__rating-window {
     opacity: 1;
     z-index: 100;
     top: -250%;
+}
+.card__info_rating:hover .card__rating-window {
+    top: -550%;
 }
 .card__rating-title {
     font-size: 36px;

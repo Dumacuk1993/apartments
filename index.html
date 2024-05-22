@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="muKpqrbxFiyPICopQAgdk77ROxzl8pgSM0flk4aIzhk" />
     <title>Home - TOP REAL ESTATE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +19,8 @@
 <body>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]
-            function(){(m[i].a=m[i].a[]).push(arguments)};
-            m[i].l=1*new Date();
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
@@ -44,7 +43,18 @@
 
     gtag('config', 'G-0THLFNFNC0');
     </script>
+    <script>
+        function addLeadingZero(number) {
+            return number < 10 ? '0' + number : number;
+        }
 
+        const today = new Date();
+        const day = addLeadingZero(today.getDate());
+        const month = addLeadingZero(today.getMonth() + 1);
+        const year = today.getFullYear();
+
+        const formattedDate = `${day}.${month}.${year}`;
+    </script>
     <header class="header">
         <div class="container">
             <a href="" class="header__logo">
@@ -59,7 +69,7 @@
      <section class="main">
         <div class="container">
             <h1 class="main__title">Top 5 Properties for living and investments</h1>
-            <h2 class="main__description">Independent rating based on 15,000 transactions over the past month</h2>
+            <h2 class="main__description">Independent Real Estate Rating. Updated <script>document.writeln(formattedDate);</script></h2>
             <div class="main_filters">
                 <div data-filter="studio" class="main_filters__item">
                     Studio
@@ -352,7 +362,8 @@ While our content is based on thorough research, it does not constitute legal, p
                     <div class="modal__consultation-message">Fill in the form and we will contact you</div>
                     <form type="submit" class="modal__consultation--form telegram_form2" action="https://api.web3forms.com/submit" method="POST" id="form2">
                         <input type="hidden" class="phonecc" name="phonecc" value="">
-                        <input type="hidden" name="access_key" value="371074fb-f397-4b0a-ba7f-3d180a8a9dda">
+                        <input type="hidden" name="subject" value="Заявка c Главной страницы из опросника">
+                        <input type="hidden" name="access_key" value="371074fb-f397-4b0a-ba7f-3d180a8a9dda">  
                         <input type="hidden" name="status" value="">
                         <input type="hidden" name="region" value=""> 
                         <input type="hidden" name="budget" value="">
@@ -389,6 +400,7 @@ While our content is based on thorough research, it does not constitute legal, p
             <div class="modal__consultation-message">Fill in the form and we will contact you</div>
             <form class="modal__consultation--form telegram_form" action="https://api.web3forms.com/submit" method="POST" id="form">
                 <input type="hidden" class="phonecc" name="phonecc" value="">
+                <input type="hidden" name="subject" value="Заявка c Главной страницы из формы get consultation">
                 <input type="hidden" name="access_key" value="371074fb-f397-4b0a-ba7f-3d180a8a9dda">
                 <input type="text" placeholder="Name" name="name" required>
                 <input type="tel" class="phone" name="phone" required>

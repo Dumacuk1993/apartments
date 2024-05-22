@@ -31,6 +31,9 @@ projectTabs.forEach(project => {
 const gallery = new SimpleLightbox('.gallery a', { 
 });
 
+const gallery2 = new SimpleLightbox('.gallery2 a', { 
+});
+
 galleryBtn.addEventListener("click", () => {
 	const btn = document.querySelector(".gallery a");
 	btn.click()
